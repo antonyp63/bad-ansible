@@ -43,9 +43,6 @@
 
 
 
-
-
-
 - name: index.html on app 1
   hosts: app1
   gather_facts: false
