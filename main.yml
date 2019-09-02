@@ -105,6 +105,9 @@
       src: index.html.app2
       dest: /usr/share/tomcat/webapps/ansible/index.html
 
+- include_role:
+  - name: deploy progress
+
 - name: deploy progress
   include_role:
     name: db
