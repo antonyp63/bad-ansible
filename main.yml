@@ -106,8 +106,10 @@
       dest: /usr/share/tomcat/webapps/ansible/index.html
 
 
-
 - name: deploy progress
+  hosts: appdb
+  become: true
+  
   tasks:
   - include_role:
     name: db
