@@ -16,6 +16,8 @@
 - name: configuration
   hosts: all
   gather_facts: false # remove later! speeds up testing
+  vars_from:
+    src var/main.yml
   become: true
 
   tasks:
@@ -33,9 +35,6 @@
   - include_role:
       name: haproxy
 
-  
-
-
 - name: deploy tomcat
   hosts: apps
   gather_facts: false
@@ -44,7 +43,10 @@
   - include_role:
       name: tomcat
 
-  
+
+
+
+
 
 - name: index.html on app 1
   hosts: app1
