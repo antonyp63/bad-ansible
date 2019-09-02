@@ -105,7 +105,7 @@
       src: index.html.app2
       dest: /usr/share/tomcat/webapps/ansible/index.html
 
-
+########
 - name: deploy progress
   hosts: appdbs
   become: true
@@ -114,7 +114,7 @@
       name: roles/db
   
 
-
+#######
 
 
 - name: deploy apache
