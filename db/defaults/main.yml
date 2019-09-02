@@ -1,7 +1,6 @@
 ---
 # defaults file for db
 - name: deploy postgres
-  hosts: apps
   gather_facts: false
   become: true
   hosts: appdbs
