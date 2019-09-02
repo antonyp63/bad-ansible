@@ -40,7 +40,7 @@
   hosts: apps
   gather_facts: false
   become: true
-  task:
+  tasks:
   - include_role:
       name: tomcat
 
