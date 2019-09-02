@@ -98,7 +98,7 @@
 
 
 - name: smoke test
-  hosts: apps
+  hosts: frontends
   gather_facts: false
   become: true
   tasks:

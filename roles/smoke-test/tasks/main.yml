@@ -3,7 +3,7 @@
 
 - name: "Checking server availibility"
   uri:
-    url: http://frontend1.${GUID}.example.opentlc.com
+    url: http://frontend1.7d32.example.opentlc.com
     timeout: 5
   register: command_result
   ignore_errors: yes
