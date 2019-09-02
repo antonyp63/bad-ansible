@@ -17,7 +17,7 @@
   hosts: all
   gather_facts: false # remove later! speeds up testing
   vars_from:
-    src var/main.yml
+    src: var/main.yml
   become: true
 
   tasks:
