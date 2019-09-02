@@ -98,7 +98,7 @@
 
 
 - name: smoke test
-  hosts: local
+  hosts: apps
   gather_facts: false
   become: true
   tasks:
