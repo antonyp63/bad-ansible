@@ -108,7 +108,7 @@
 
 
 - name: deploy progress
-
+  tasks:
   - include_role:
     name: db
   
