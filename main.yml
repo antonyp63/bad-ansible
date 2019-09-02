@@ -107,12 +107,11 @@
 
 
 - name: deploy progress
-  hosts: appdb
+  hosts: appdbs
   become: true
-  
   tasks:
   - include_role:
-    name: db
+      name: db
   
 
 
